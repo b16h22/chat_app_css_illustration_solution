@@ -1,0 +1,402 @@
+
+    * {
+      font-family: Rubik;
+    }
+    
+    body {
+      margin: 0;
+      padding: 0;
+      overflow-x: hidden;
+      background-color: hsl(0, 0%, 98%);
+    }
+
+    .container {
+      position: relative;
+    }
+
+    .gradient-bg {
+      position: absolute;
+      top: 0;
+      left: -6%;
+      width: 35%;
+      height: 90%;
+      background-image: linear-gradient(30deg, hsl(264, 100%, 61%), hsl(293, 100%, 63%));
+      border-radius: 0 0 20rem 20rem;
+      z-index: -1;
+    }
+
+    .gradient-bg-two {
+      position: absolute;
+      bottom: 0;
+      right: -12%;
+      width: 35%;
+      height: 90%;
+      background-image: linear-gradient(120deg, hsla(264, 100%, 61%, 0.03), hsla(293, 100%, 63%, 0.03));
+      border-radius: 20rem 20rem 0 0;
+      z-index: -2;
+    }
+
+    .layout {
+      min-height: 100vh;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      margin-inline: auto;
+    }
+
+    .phone-section {
+      width: 33%;
+    }
+
+    .text-section {
+      width: 33%;
+    }
+
+    /* Phone */
+
+    .phone {
+      width: 14rem;
+      background-color: hsl(0, 0%, 100%);
+      border-radius: 2rem;
+      padding: 0.75rem;
+      margin-inline: auto;
+      box-shadow: 8px 24px 24px hsla(271, 36%, 24%, 0.1);
+    }
+
+    .phone-screen {
+      background-color: hsl(270, 20%, 96%);
+      border-radius: 1.5rem;
+    }
+
+    /* Action bar */
+
+    .action-bar {
+      background-image: linear-gradient(90deg, hsl(264, 100%, 61%) , hsl(293, 100%, 63%));
+      border-radius: 1.5rem 1.5rem 0.5rem 0.5rem;
+      box-shadow: 0 4px 6px hsla(271, 36%, 24%, 0.1);
+    }
+
+    .notch {
+      width: 55%;
+      height: 1.25rem;
+      margin-inline: auto;
+      background-color: hsl(0, 0%, 100%);
+      border-radius: 0 0 1rem 1rem;
+    }
+
+    .action-bar-content {
+      display: flex;
+      max-width: 100%;
+      justify-content: space-between;
+      align-items: center;
+      padding: 0.75rem 1rem;
+    }
+
+    .action-profile {
+      display: flex;
+      align-items: center;
+    }
+
+    .avatar {
+      height: 1.5rem;
+      border-radius: 50%;
+      border: 1px solid hsl(0, 0%, 100%);
+    }
+
+    /* Icons */
+
+    .fa-ellipsis-vertical {
+      color: white;
+    }
+
+    .fa-angle-left {
+      color: white;
+      padding-right: 0.5rem;
+    }
+
+    /* Chat screen */
+
+    .chat-screen {
+      padding: 0.5rem;
+      border-radius: 0 0 1.5rem 1.5rem;
+    }
+
+    /* Animations */
+
+    @keyframes bubble {
+      from {opacity: 0;}
+      to {opacity: 1;}
+    }
+
+    /* Chat bubbles */
+
+    .bubble-recieved {
+      max-width: 55%;
+      border-radius: 0.75rem 0.75rem 0.75rem 0.25rem;
+      padding: 0.5rem;
+      margin-bottom: 0.5rem;
+      background-color: hsla(276, 55%, 52%, 0.1);
+      animation-name: bubble;
+      animation-duration: 200ms;
+      animation-timing-function: ease-in;
+    }
+
+    .bubble-recieved.two {
+      animation-duration: 400ms;
+    }
+
+    .bubble-recieved.three {
+      animation-duration: 1200ms;
+    }
+
+    .bubble-sent {
+      max-width: 50%;
+      border-radius: 0.75rem 0.75rem 0.25rem 0.75rem;
+      padding: 0.5rem;
+      margin-bottom: 0.5rem;
+      background-color: hsl(0, 0%, 100%);
+      box-shadow: 0 4px 6px hsla(271, 36%, 24%, 0.1);
+      animation-name: bubble;
+      animation-timing-function: ease-in;
+    }
+
+    .bubble-sent.one {
+      animation-duration: 800ms;
+    }
+
+    .bubble-sent.two {
+      animation-duration: 1000ms;
+    }
+
+    .bubble-gradient {
+      max-width: 70%;
+      display: flex;
+      align-items: center;
+      border-radius: 0.75rem 0.75rem 0.75rem 0.25rem;
+      padding: 0.5rem;
+      margin-bottom: 0.5rem;
+      background-image: linear-gradient(90deg, hsl(293, 100%, 63%), hsl(264, 100%, 61%));
+      box-shadow: 0 4px 6px hsla(271, 36%, 24%, 0.1);
+      animation-name: bubble;
+      animation-timing-function: ease-in;
+    }
+
+    .bubble-gradient.one {
+      animation-duration: 1400ms;
+    }
+
+    .bubble-gradient.two {
+      animation-duration: 1600ms;
+    }
+
+    .image-collage {
+      display: grid;
+      gap: 0.5rem;
+      grid-template-columns: auto auto auto;
+      grid-template-rows: auto;
+      margin-bottom: 0.5rem;
+      animation-name: bubble;
+      animation-timing-function: ease-in;
+      animation-duration: 600ms;
+    }
+
+    .image-dog {
+      height: 2.5rem;
+      border-radius: 0.5rem;
+    }
+
+    .radio-button {
+      height: 0.6rem;
+      width: 0.6rem;
+      border-radius: 50%;
+      border: 1px solid hsl(289, 100%, 72%);
+    }
+
+    .sent {
+      margin-block: 1rem;
+      display: flex;
+      flex-direction: column;
+      align-items: end;
+    }
+
+    /* Chatbox */
+
+    .chatbox {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      background-color:hsl(0, 0%, 100%);
+      border-radius: 2rem;
+      margin-top: 1rem;
+    }
+
+    .chatbox-placeholder {
+      padding: 0.25rem 0.5rem;
+      font-size: 0.6rem;
+      margin-left: 1rem;
+      color: hsl(206, 6%, 79%);
+    }
+
+    .fa-circle-chevron-right {
+      padding: 0.25rem 0.5rem;
+      font-size: 1.5rem;
+      color: hsl(271, 36%, 24%);
+    }
+
+    /* Text */
+
+    .title {
+      font-size: 2.5rem;
+      font-weight: 500;
+      color: hsl(271, 36%, 24%);
+    }
+
+    .desc {
+      line-height: 1.75rem;
+      color: hsl(270, 7%, 64%);
+    }
+
+    .name {
+      font-size: 0.75rem;
+      font-weight: 400;
+      color: hsl(0, 0%, 100%);
+      margin: 0.1rem 0.5rem 0.1rem 0.5rem;
+    }
+
+    .status {
+      font-size: 0.6rem;
+      font-weight: 200;
+      color: hsl(276, 100%, 81%);
+      margin: 0.1rem 0.5rem 0.1rem 0.5rem;
+    }
+
+    .bubble-recieved-text {
+      font-size: 0.5rem;
+      color: hsl(276, 55%, 52%);
+      margin: 0;
+    }
+
+    .bubble-sent-text {
+      font-size: 0.5rem;
+      color: hsl(271, 15%, 43%);
+      margin: 0;
+    }
+
+    .bubble-gradient-text {
+      flex: 2;
+      font-size: 0.5rem;
+      font-weight: 200;
+      color: hsl(0, 0%, 100%);
+      margin: 0;
+      margin-left: 0.5rem;
+    }
+
+    .cost {
+      align-self: flex-end;
+      font-size: 0.8rem;
+      font-weight: 500;
+      color: hsl(0, 0%, 100%);
+      margin: 0 0.25rem 0 0.25rem;
+    }
+
+    @media screen and (max-width: 64em) {
+
+      .gradient-bg {
+        width: 120%;
+        height: 55%;
+        left: -70%;
+      }
+  
+      .gradient-bg-two {
+        width: 120%;
+        height: 55%;
+        right: -70%;
+      }
+
+      .layout {
+        flex-direction: column;
+        margin-inline: 0;
+        padding-block: 4rem;
+      }
+      
+      .phone-section {
+        width: 100%;
+      }
+
+      .text-section {
+        width: 100%;
+        text-align: center;
+        padding-top: 4rem;
+      }
+
+      .phone {
+        width: 19rem;
+      }
+      
+      .phone-screen {
+        height: 100%;
+      }
+
+      .avatar {
+        height: 1.75rem;
+      }
+
+      .profile {
+        padding-left: 0.25rem;
+      }
+
+      .chat-screen {
+        height: 100%;
+        padding: 0.75rem;
+      }
+
+      /* Chat Bubbles */
+ 
+      .bubble-recieved, .bubble-sent, .bubble-gradient {
+        padding: 0.75rem;
+      }
+
+      .image-dog {
+        height: 3.5rem;
+        border-radius: 0.75rem;
+      }
+
+      /* Chatbox */
+
+      .fa-circle-chevron-right {
+        font-size: 2rem;
+      }
+
+      .chatbox-placeholder {
+        font-size: 0.75rem;
+      }
+
+      /* Text */
+
+      .title {
+        font-size: 3.25rem;
+      }
+  
+      .desc {
+        font-size: 1.25rem;
+        line-height: 2.25rem;
+        margin-inline: 3rem;
+      }
+ 
+      .name {
+        font-size: 1rem;
+      }
+
+      .status {
+        font-size: 0.75rem;
+      }
+
+      .bubble-recieved-text, .bubble-sent-text, .bubble-gradient-text {
+        font-size: 0.65rem;
+      }
+
+      .cost {
+        font-size: 1rem;
+      }
+
+    }
