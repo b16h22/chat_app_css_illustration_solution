@@ -321,6 +321,7 @@
       flex-direction: column;
       margin-inline: 0;
       padding-block: 4rem;
+      padding-inline: 2rem;
     }
       
     .phone-section {
@@ -384,7 +385,6 @@
     .desc {
       font-size: 1.25rem;
       line-height: 2.25rem;
-      margin-inline: 3rem;
     }
  
     .name {
