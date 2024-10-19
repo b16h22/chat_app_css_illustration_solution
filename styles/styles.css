@@ -301,18 +301,20 @@
     margin: 0 0.25rem 0 0.25rem;
   }
 
-  @media screen and (max-width: 64em) {
+  @media screen and (max-width: 48em) {
 
     .gradient-bg {
-      width: 120%;
+      width: 50%;
       height: 55%;
-      left: -70%;
+      left: 0;
+      border-radius: 0 0 20rem 0;
     }
   
     .gradient-bg-two {
-      width: 120%;
+      width: 50%;
       height: 55%;
-      right: -70%;
+      right: 0;
+      border-radius: 20rem 0 0 0;
     }
 
     .layout {
