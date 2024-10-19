@@ -304,16 +304,16 @@
   @media screen and (max-width: 48em) {
 
     .gradient-bg {
+      left: 0;
       width: 50%;
       height: 55%;
-      left: 0;
       border-radius: 0 0 20rem 0;
     }
   
     .gradient-bg-two {
+      right: 0;
       width: 50%;
       height: 55%;
-      right: 0;
       border-radius: 20rem 0 0 0;
     }
 
