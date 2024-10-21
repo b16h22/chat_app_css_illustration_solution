@@ -303,6 +303,10 @@
 
   @media screen and (max-width: 48em) {
 
+    body {
+      overflow-x: auto;
+    }
+
     .gradient-bg {
       left: 0;
       width: 50%;
@@ -319,7 +323,6 @@
 
     .layout {
       flex-direction: column;
-      margin-inline: 0;
       padding-block: 4rem;
     }
       
@@ -346,7 +349,7 @@
     }
 
     .profile {
-      padding-left: 0.25rem;
+      margin-left: 0.25rem;
     }
 
     .chat-screen {
