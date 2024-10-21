@@ -6,14 +6,12 @@
   body {
     margin: 0;
     padding: 0;
-    max-width: 100%;
     overflow-x: hidden;
     background-color: hsl(0, 0%, 98%);
   }
 
   .container {
     position: relative;
-    width: 100vw;
   }
 
   .gradient-bg {
@@ -324,6 +322,7 @@
     .layout {
       flex-direction: column;
       padding-block: 4rem;
+      padding-inline: 0;
     }
       
     .phone-section {
